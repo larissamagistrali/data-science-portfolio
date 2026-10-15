@@ -1,0 +1,56 @@
+{
+  "coletado_em": "2026-10-14",
+  "user_agent": "data-science-portfolio/0.1 (educacional; github.com/larissamagistrali)",
+  "fontes": {
+    "BCB SGS": "https://api.bcb.gov.br/dados/serie/bcdata.sgs.{codigo}/dados (dados abertos do Banco Central do Brasil)",
+    "IBGE SIDRA": "https://apisidra.ibge.gov.br (IBGE, dados abertos)"
+  },
+  "series_sgs": [
+    {
+      "codigo": 432,
+      "nome": "Selic meta",
+      "unidade": "% a.a.",
+      "linhas": 6131,
+      "inicio": "2010-01-01",
+      "fim": "2026-10-14"
+    },
+    {
+      "codigo": 433,
+      "nome": "IPCA (variação mensal)",
+      "unidade": "% a.m.",
+      "linhas": 201,
+      "inicio": "2010-01-01",
+      "fim": "2026-09-01"
+    },
+    {
+      "codigo": 1,
+      "nome": "Dólar comercial (venda)",
+      "unidade": "R$/US$",
+      "linhas": 4215,
+      "inicio": "2010-01-04",
+      "fim": "2026-10-14"
+    },
+    {
+      "codigo": 24369,
+      "nome": "Taxa de desocupação (PNAD Contínua)",
+      "unidade": "%",
+      "linhas": 174,
+      "inicio": "2012-03-01",
+      "fim": "2026-08-01"
+    }
+  ],
+  "sidra": {
+    "populacao_uf": {
+      "tabela": 6579,
+      "variavel": 9324
+    },
+    "desocupacao_uf_trimestre": {
+      "tabela": 4099,
+      "variavel": 4099
+    },
+    "ipca_indice": {
+      "tabela": 1737,
+      "variavel": 2266
+    }
+  }
+}

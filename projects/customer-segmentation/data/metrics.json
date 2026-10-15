@@ -1,0 +1,253 @@
+{
+  "fonte": "Online Retail II (UCI), CC BY 4.0",
+  "gerado_em": "2026-10-14",
+  "periodo": {
+    "inicio": "2009-12-01",
+    "fim": "2011-12-09",
+    "data_referencia": "2011-12-10"
+  },
+  "limpeza": {
+    "linhas_brutas": 1067371,
+    "sem_customer_id": 243007,
+    "cancelamentos": 18744,
+    "quantidade_ou_preco_invalido": 71,
+    "codigos_nao_produto": 2662,
+    "linhas_validas": 802887,
+    "clientes": 5853
+  },
+  "clientes_rfm": 5853,
+  "k_escolhido": 4,
+  "regra_k": "maior silhouette entre k=3 e k=8",
+  "selecao_k": [
+    {
+      "k": 2,
+      "inertia": 8574.2809,
+      "silhouette": 0.44,
+      "davies_bouldin": 0.875
+    },
+    {
+      "k": 3,
+      "inertia": 6356.5936,
+      "silhouette": 0.3471,
+      "davies_bouldin": 1.0311
+    },
+    {
+      "k": 4,
+      "inertia": 4945.8006,
+      "silhouette": 0.3618,
+      "davies_bouldin": 0.9383
+    },
+    {
+      "k": 5,
+      "inertia": 4126.7761,
+      "silhouette": 0.3403,
+      "davies_bouldin": 0.955
+    },
+    {
+      "k": 6,
+      "inertia": 3576.482,
+      "silhouette": 0.3358,
+      "davies_bouldin": 0.9564
+    },
+    {
+      "k": 7,
+      "inertia": 3205.1713,
+      "silhouette": 0.3046,
+      "davies_bouldin": 0.973
+    },
+    {
+      "k": 8,
+      "inertia": 2906.0412,
+      "silhouette": 0.3075,
+      "davies_bouldin": 0.967
+    },
+    {
+      "k": 9,
+      "inertia": 2667.0424,
+      "silhouette": 0.2889,
+      "davies_bouldin": 1.0139
+    },
+    {
+      "k": 10,
+      "inertia": 2475.3622,
+      "silhouette": 0.2863,
+      "davies_bouldin": 1.0129
+    }
+  ],
+  "perfil_clusters": [
+    {
+      "cluster": 0,
+      "segmento": "Inativos",
+      "clientes": 2055,
+      "pct_clientes": 0.3511,
+      "recencia_mediana_dias": 400.0,
+      "frequencia_mediana": 1.0,
+      "monetario_mediano": 295.73,
+      "ticket_medio": 207.87,
+      "taxa_cancelamento_media": 0.0816,
+      "receita_total": 715685.6,
+      "pct_receita": 0.041
+    },
+    {
+      "cluster": 1,
+      "segmento": "Campeões",
+      "clientes": 1107,
+      "pct_clientes": 0.1891,
+      "recencia_mediana_dias": 15.0,
+      "frequencia_mediana": 13.0,
+      "monetario_mediano": 5258.1,
+      "ticket_medio": 373.2,
+      "taxa_cancelamento_media": 0.1648,
+      "receita_total": 12495276.41,
+      "pct_receita": 0.7162
+    },
+    {
+      "cluster": 2,
+      "segmento": "Intermediários",
+      "clientes": 1471,
+      "pct_clientes": 0.2513,
+      "recencia_mediana_dias": 157.0,
+      "frequencia_mediana": 5.0,
+      "monetario_mediano": 1617.32,
+      "ticket_medio": 326.6,
+      "taxa_cancelamento_media": 0.152,
+      "receita_total": 3211004.94,
+      "pct_receita": 0.184
+    },
+    {
+      "cluster": 3,
+      "segmento": "Recentes (baixa frequência)",
+      "clientes": 1220,
+      "pct_clientes": 0.2084,
+      "recencia_mediana_dias": 23.0,
+      "frequencia_mediana": 3.0,
+      "monetario_mediano": 730.115,
+      "ticket_medio": 257.81,
+      "taxa_cancelamento_media": 0.0928,
+      "receita_total": 1025293.78,
+      "pct_receita": 0.0588
+    }
+  ],
+  "centroides_z": [
+    {
+      "recency_days": 0.863,
+      "frequency": -0.8603,
+      "monetary": -0.9003,
+      "segmento": "Inativos"
+    },
+    {
+      "recency_days": -1.141,
+      "frequency": 1.5467,
+      "monetary": 1.3622,
+      "segmento": "Campeões"
+    },
+    {
+      "recency_days": 0.384,
+      "frequency": 0.2944,
+      "monetary": 0.4374,
+      "segmento": "Intermediários"
+    },
+    {
+      "recency_days": -0.8893,
+      "frequency": -0.3004,
+      "monetary": -0.2387,
+      "segmento": "Recentes (baixa frequência)"
+    }
+  ],
+  "quintis_perfil": [
+    {
+      "segmento": "Atenção",
+      "clientes": 385,
+      "recencia_mediana_dias": 92.0,
+      "frequencia_mediana": 1.0,
+      "monetario_mediano": 371.01,
+      "receita_total": 207692.0,
+      "pct_receita": 0.0119
+    },
+    {
+      "segmento": "Campeões",
+      "clientes": 1464,
+      "recencia_mediana_dias": 16.0,
+      "frequencia_mediana": 10.0,
+      "monetario_mediano": 3430.095,
+      "receita_total": 12045058.38,
+      "pct_receita": 0.6904
+    },
+    {
+      "segmento": "Em risco",
+      "clientes": 831,
+      "recencia_mediana_dias": 373.0,
+      "frequencia_mediana": 4.0,
+      "monetario_mediano": 1035.43,
+      "receita_total": 1644050.29,
+      "pct_receita": 0.0942
+    },
+    {
+      "segmento": "Hibernando",
+      "clientes": 1510,
+      "recencia_mediana_dias": 432.0,
+      "frequencia_mediana": 1.0,
+      "monetario_mediano": 283.73,
+      "receita_total": 633182.23,
+      "pct_receita": 0.0363
+    },
+    {
+      "segmento": "Leais",
+      "clientes": 1217,
+      "recencia_mediana_dias": 72.0,
+      "frequencia_mediana": 4.0,
+      "monetario_mediano": 1213.88,
+      "receita_total": 2503382.73,
+      "pct_receita": 0.1435
+    },
+    {
+      "segmento": "Recentes (baixa frequência)",
+      "clientes": 446,
+      "recencia_mediana_dias": 26.0,
+      "frequencia_mediana": 1.0,
+      "monetario_mediano": 370.82,
+      "receita_total": 413895.1,
+      "pct_receita": 0.0237
+    }
+  ],
+  "comparacao": {
+    "ari_kmeans_vs_quintis": 0.43466794349215343,
+    "silhouette_kmeans": 0.3617504211081952,
+    "silhouette_quintis": 0.17258386859382396,
+    "n_segmentos_quintis": 6
+  },
+  "cruzamento_kmeans_quintis": {
+    "Campeões": {
+      "Atenção": 0,
+      "Campeões": 1012,
+      "Em risco": 13,
+      "Hibernando": 0,
+      "Leais": 81,
+      "Recentes (baixa frequência)": 1
+    },
+    "Inativos": {
+      "Atenção": 284,
+      "Campeões": 0,
+      "Em risco": 224,
+      "Hibernando": 1459,
+      "Leais": 53,
+      "Recentes (baixa frequência)": 35
+    },
+    "Intermediários": {
+      "Atenção": 29,
+      "Campeões": 172,
+      "Em risco": 594,
+      "Hibernando": 51,
+      "Leais": 624,
+      "Recentes (baixa frequência)": 1
+    },
+    "Recentes (baixa frequência)": {
+      "Atenção": 72,
+      "Campeões": 280,
+      "Em risco": 0,
+      "Hibernando": 0,
+      "Leais": 459,
+      "Recentes (baixa frequência)": 409
+    }
+  }
+}
